@@ -1,0 +1,413 @@
+X-Antivirus: avast (VPS 26091400)
+X-Antivirus-Status: Clean
+Return-path: <hv.steffanbruckner@gmail.com>
+Envelope-to: patrick@mehrfachagentur.eu
+Delivery-date: Tue, 18 Aug 2026 08:37:07 +0200
+Received: from [81.19.149.113] (helo=mx03lb.world4you.com)
+	by mail23.world4you.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.97.1)
+	(envelope-from <hv.steffanbruckner@gmail.com>)
+	id 1wwDRb-0000000099t-2H0T
+	for patrick@mehrfachagentur.eu;
+	Tue, 18 Aug 2026 08:37:07 +0200
+Received: from [209.85.128.44] (helo=mail-wm1-f44.google.com)
+	by mx03lb.world4you.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.97.1)
+	(envelope-from <hv.steffanbruckner@gmail.com>)
+	id 1wwDRa-000000002MU-34vt
+	for patrick@mehrfachagentur.eu;
+	Tue, 18 Aug 2026 08:37:07 +0200
+Received: by mail-wm1-f44.google.com with SMTP id 5b1f17b1804b1-4996f1ee4a4so34258065e9.2
+        for <patrick@mehrfachagentur.eu>; Mon, 17 Aug 2026 23:37:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1787035026; x=1787639826; darn=mehrfachagentur.eu;
+        h=content-language:thread-index:content-type:mime-version:message-id
+         :date:subject:in-reply-to:references:to:from:from:to:cc:subject:date
+         :message-id:reply-to:content-type;
+        bh=Z9YF71DU1qCBOtMQ0qbkCkT5IlrFSP3SfbAlsizjG4c=;
+        b=UH7UptmYjVE3wvKyvpDyBjTOIvVHT/MS6mjF/i7ZLdVEPo3SN/JDFbj2+iwwUe0AW4
+         nGiqS1O3eS5uXdTtx8xmVXdenJ1dC8IUf9V0iEhCR6Zut230jlE+sZfooYF391ZvAC/C
+         jNj4k6OSsCTT9TWWJ+tRaz3Py80j99aj6j1LAvU2a/NkmYQO1FvjvLc82onGe2IMhOXI
+         a/zG+SkPFtiH5gKj893B7Um5ho4PSe9r+7hgrMicWEAokcPRWtAFiMoNLZX92l/2//Cc
+         gagAe37lKF/cARZL2P+bKRv/0rnHTUDP48l5K4EO5QbRZM1NfqX4uv2tldE6KzD5ghWn
+         WE3g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1787035026; x=1787639826;
+        h=content-language:thread-index:content-type:mime-version:message-id
+         :date:subject:in-reply-to:references:to:from:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to
+         :content-type;
+        bh=Z9YF71DU1qCBOtMQ0qbkCkT5IlrFSP3SfbAlsizjG4c=;
+        b=Mip97lschWy17u39u5TUJOi1URWqNFlKuVW2JzqRNfn5dXeC0tNkuNb8yKzO+IGjTl
+         sp3hz5FWNaMFR+EgLQfh9D+FlzEhnmWHqlqJth51vB2yRi80kKTRivPHuFZScysancgV
+         uKeGWcvxy7yHHUoJjKDxyz9yWudp6I8DuNjtYtTBQz0al/Zf+y4Mw2+fgQQvP0UTrs04
+         2/Dna3y6n1RcDVV+PFwnmnOUX/qwacmSSMOgvBiiNZWsmpyBD6dMAPxFVUij0sxJgLPe
+         WiKMxnkdN0BTg2skRpYp2hn8gfgaaobUlDL3gcKjv9JbaKgT0sxmolBV7Tzw3p8oqVnD
+         9zmw==
+X-Gm-Message-State: AOJu0Yx9W72EdVnhSG2+jeyl7HAC4Bx8I+P/72dmHIkBGTpHGznfQXqe
+	fgZmh8Ze3p0nE7XXrsU/1YmiWPltCM7pyM5qd3o4EMtnDWf03Tl6ZWtP5VZfbg==
+X-Gm-Gg: AR+sD108upRafENdHqUMEQXANYJApNkmvV4kZVc5bOTu+zo4Swxm/Wn9LEFojbSKeyO
+	Sh9OO4ngd5ICbfvB8yTLvseK5SHOu/LRn4MkguaMSDJbicO5MGJZ7iUmPQF7BXu+QLi1MenweyU
+	1fc5yzaZcduJzOtfBOwOzmp5XD7RZwajaBkN1yubLgSmdk50c53GoiUi7idGrZup7+yf4qBOCFc
+	AYPmZ13/mrN46tJO9+81P1W7c9qBTcLeTkEKvhfP07Tw8LIIRutN3H+ADMKmr0ZQoMNk3F6fTg5
+	TTHKhgnrEa8yycIMRjIqrhuOTfJBaij2hRiKHeA5aHBOaZotAMW4NIWLC+fAcAxN9yEVJxNzOyP
+	6w4FFUmloZqmPhAcgXDGc/ZJBC9cFYdTm8Z3iA4JyIwunhtMPskCXZTK6tY1JizGyBvf344bqVS
+	OGsW+lhwBhEOsyfb1/+p5pytOGziQzCLvOku54tqVnbVpl70ELlJmODR1+z4RoQdynral567vj3
+	GFm6MCRbK9D2lQ=
+X-Received: by 2002:a05:600c:5306:b0:498:952:e276 with SMTP id 5b1f17b1804b1-4999fafdb79mr111005145e9.8.1787035025732;
+        Mon, 17 Aug 2026 23:37:05 -0700 (PDT)
+Received: from DESKTOP2L7D340 ([2a04:9546:1925:3b01:e560:4796:ef90:b473])
+        by smtp.gmail.com with ESMTPSA id 5b1f17b1804b1-49996109652sm280014795e9.4.2026.08.17.23.37.05
+        for <patrick@mehrfachagentur.eu>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 17 Aug 2026 23:37:05 -0700 (PDT)
+From: "Steffan Bruckner" <hv.steffanbruckner@gmail.com>
+To: "'Patrick Bogaards, MSc'" <patrick@mehrfachagentur.eu>
+References: <1D1BDC7E-4BB3-0745-BF24-828D4BD5743D@hxcore.ol>
+In-Reply-To: <1D1BDC7E-4BB3-0745-BF24-828D4BD5743D@hxcore.ol>
+Subject: =?UTF-8?Q?AW:_Ein_pers=C3=B6nliches_Update_und_?=
+	=?UTF-8?Q?meine_neuen_Kontaktdaten?=
+Date: Tue, 18 Aug 2026 08:37:05 +0200
+Message-ID: <006001dd2edb$fc6de940$f549bbc0$@gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0061_01DD2EEC.BFF92A40"
+X-Mailer: Microsoft Outlook 15.0
+Thread-Index: AQHoCMrBwFgi+hdASk8kbEwSYyQVy7aNpgcQ
+Content-Language: de-at
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0061_01DD2EEC.BFF92A40
+Content-Type: text/plain;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Sehr geehrter Herr Bogaards!
+
+=20
+
+Danke f=C3=BCr die Info, ich habe mir das jetzt vorgemerkt. Ich =
+w=C3=BCnsche Ihnen dazu viel Erfolg und verbleibe
+
+=20
+
+mit freundlichen Gr=C3=BC=C3=9Fen
+
+=20
+
+Steffan Bruckner
+
+=20
+
+Steffan Bruckner Immobilienverwaltung
+
+2232 Deutsch Wagram,  Heinrich Collin-Stra=C3=9Fe 15
+
+ <mailto:hv.steffanbruckner@gmail.com> hv.steffanbruckner@gmail.com, =
+0699/111 725 04
+
+=20
+
+=20
+
+Von: Patrick Bogaards, MSc [mailto:patrick@mehrfachagentur.eu]=20
+Gesendet: Freitag, 14. August 2026 10:57
+An: hv.steffanbruckner@gmail.com
+Betreff: Ein pers=C3=B6nliches Update und meine neuen Kontaktdaten
+
+=20
+
+Hallo Herr Bruckner,
+
+=20
+
+Heute melde ich mich mit einer pers=C3=B6nlichen Neuigkeit.
+
+=20
+
+Wie Sie vermutlich bereits wissen, verlasse ich die Firma Allrisk. Nach =
+einer spannenden und lehrreichen Zeit habe ich mich entschieden, einen =
+neuen Weg einzuschlagen: K=C3=BCnftig bin ich gemeinsam mit einem =
+langj=C3=A4hrigen Freund als Mehrfachagent t=C3=A4tig und berate =
+weiterhin pers=C3=B6nlich und unabh=C3=A4ngig.
+
+Dazu befindet ich aktuell unser k=C3=BCnftiges Unternehmen in =
+Gr=C3=BCndung und ich werde, sobald dieser Prozess erledigt ist die =
+genauen Details dazu bekannt geben.
+
+=20
+
+Mir war es immer wichtig, f=C3=BCr Sie ein verl=C3=A4sslicher =
+Ansprechpartner zu sein =E2=80=93 und genau das bleibt auch so. Es =
+w=C3=BCrde mich sehr freuen, Sie auch in Zukunft bei allen Fragen rund =
+um Versicherung, Vorsorge und Absicherung begleiten zu d=C3=BCrfen.
+
+Dazu w=C3=BCrden wir Ihnen auch k=C3=BCnftig wie Sie es bisher gewohnt =
+sind, eine Provisionsbeteiligung bieten k=C3=B6nne, und zwar etwas =
+h=C3=B6her als bisher, n=C3=A4mlich 50 %.
+
+=20
+
+Damit wir unkompliziert in Kontakt bleiben, erreichen Sie mich ab sofort =
+unter:
+
+=F0=9F=93=9E 0676 / 5533024
+
+=F0=9F=93=A7 patrick@mehrfachagentur.eu =
+<mailto:patrick@mehrfachagentur.eu>=20
+
+=20
+
+An dieser Stelle m=C3=B6chte ich mich herzlich f=C3=BCr Ihr Vertrauen =
+bedanken. Unsere Zusammenarbeit bedeutet mir viel, und ich freue mich =
+darauf, Sie auch weiterhin mit vollem Einsatz und pers=C3=B6nlicher =
+Betreuung unterst=C3=BCtzen zu d=C3=BCrfen.
+
+=20
+
+=20
+
+Wenn Sie Fragen haben oder etwas besprechen m=C3=B6chten, melden Sie =
+sich jederzeit gerne telefonisch oder per Nachricht.
+
+=20
+
+=20
+
+Herzliche Gr=C3=BC=C3=9Fe
+
+=20
+
+Patrick Bogaards, MSc
+
+Versicherungsmehrfachagent
+
+staatlich gepr=C3=BCfter Verm=C3=B6gensberater
+
+=20
+
+=F0=9F=93=9E 0676 / 5533024
+
+=F0=9F=93=A7 patrick@mehrfachagentur.eu =
+<mailto:patrick@mehrfachagentur.eu>=20
+
+=F0=9F=8C=90 www.mehrfachagentur.eu <http://www.mehrfachagentur.eu>=20
+
+=F0=9F=8C=90 www.bogaards.at <http://www.bogaards.at>=20
+
+=20
+
+
+------=_NextPart_000_0061_01DD2EEC.BFF92A40
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><meta =
+http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8"><meta =
+name=3DGenerator content=3D"Microsoft Word 15 (filtered =
+medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.E-MailFormatvorlage17
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 2.0cm 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DDE-AT link=3Dblue =
+vlink=3Dpurple><div class=3DWordSection1><p class=3DMsoNormal><span =
+style=3D'font-size:9.0pt;font-family:"Verdana",sans-serif;color:#1F497D;m=
+so-fareast-language:EN-US'>Sehr geehrter Herr =
+Bogaards!<o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'font-size:9.0pt;font-family:"Verdana",sans-serif;color:#1F497D;m=
+so-fareast-language:EN-US'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span =
+style=3D'font-size:9.0pt;font-family:"Verdana",sans-serif;color:#1F497D;m=
+so-fareast-language:EN-US'>Danke f=C3=BCr die Info, ich habe mir das =
+jetzt vorgemerkt. Ich w=C3=BCnsche Ihnen dazu viel Erfolg und =
+verbleibe<o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'font-size:9.0pt;font-family:"Verdana",sans-serif;color:#1F497D'>=
+<o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span =
+style=3D'font-size:9.0pt;font-family:"Verdana",sans-serif;color:#1F497D'>=
+mit freundlichen Gr=C3=BC=C3=9Fen<o:p></o:p></span></p><p =
+class=3DMsoNormal><span =
+style=3D'font-size:9.0pt;font-family:"Verdana",sans-serif;color:#1F497D'>=
+<o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span =
+style=3D'font-size:9.0pt;font-family:"Verdana",sans-serif;color:#1F497D'>=
+Steffan Bruckner<o:p></o:p></span></p><p class=3DMsoNormal><span =
+style=3D'font-size:9.0pt;font-family:"Verdana",sans-serif;color:#1F497D'>=
+<o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><b><i><span =
+style=3D'font-size:10.0pt;font-family:"Verdana",sans-serif;color:#1F497D'=
+>Steffan Bruckner Immobilienverwaltung<o:p></o:p></span></i></b></p><p =
+class=3DMsoNormal><i><span =
+style=3D'font-size:9.0pt;font-family:"Verdana",sans-serif;color:#1F497D'>=
+2232 Deutsch Wagram,=C2=A0 Heinrich Collin-Stra=C3=9Fe =
+15<o:p></o:p></span></i></p><p class=3DMsoNormal><i><span =
+style=3D'font-size:9.0pt;font-family:"Verdana",sans-serif;color:#1F497D'>=
+<a href=3D"mailto:hv.steffanbruckner@gmail.com"><span =
+style=3D'color:#1F497D;text-decoration:none'>hv.steffanbruckner@gmail.com=
+</span></a>, 0699/111 725 04<o:p></o:p></span></i></p><p =
+class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1F497D'=
+><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span =
+style=3D'font-size:11.0pt;font-family:"Calibri",sans-serif;color:#1F497D;=
+mso-fareast-language:EN-US'><o:p>&nbsp;</o:p></span></p><div><div =
+style=3D'border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0cm =
+0cm 0cm'><p class=3DMsoNormal><b><span lang=3DDE =
+style=3D'font-size:11.0pt;font-family:"Calibri",sans-serif'>Von:</span></=
+b><span lang=3DDE =
+style=3D'font-size:11.0pt;font-family:"Calibri",sans-serif'> Patrick =
+Bogaards, MSc [mailto:patrick@mehrfachagentur.eu] <br><b>Gesendet:</b> =
+Freitag, 14. August 2026 10:57<br><b>An:</b> =
+hv.steffanbruckner@gmail.com<br><b>Betreff:</b> Ein pers=C3=B6nliches =
+Update und meine neuen Kontaktdaten<o:p></o:p></span></p></div></div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>Hallo Herr =
+Bruckner,<o:p></o:p></span></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>Heute melde ich =
+mich mit einer pers=C3=B6nlichen =
+Neuigkeit.<o:p></o:p></span></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>Wie Sie vermutlich =
+bereits wissen, verlasse ich die Firma Allrisk. Nach einer spannenden =
+und lehrreichen Zeit habe ich mich entschieden, einen neuen Weg =
+einzuschlagen: K=C3=BCnftig bin ich gemeinsam mit einem =
+langj=C3=A4hrigen Freund als Mehrfachagent t=C3=A4tig und berate =
+weiterhin pers=C3=B6nlich und =
+unabh=C3=A4ngig.<o:p></o:p></span></p></div><div><p =
+class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>Dazu befindet ich =
+aktuell unser k=C3=BCnftiges Unternehmen in Gr=C3=BCndung und ich werde, =
+sobald dieser Prozess erledigt ist die genauen Details dazu bekannt =
+geben.<o:p></o:p></span></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>Mir war es immer =
+wichtig, f=C3=BCr Sie ein verl=C3=A4sslicher Ansprechpartner zu sein =
+=E2=80=93 und genau das bleibt auch so. Es w=C3=BCrde mich sehr freuen, =
+Sie auch in Zukunft bei allen Fragen rund um Versicherung, Vorsorge und =
+Absicherung begleiten zu d=C3=BCrfen.<o:p></o:p></span></p></div><div><p =
+class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>Dazu w=C3=BCrden =
+wir Ihnen auch k=C3=BCnftig wie Sie es bisher gewohnt sind, eine =
+Provisionsbeteiligung bieten k=C3=B6nne, und zwar etwas h=C3=B6her als =
+bisher, n=C3=A4mlich 50&nbsp;%.<o:p></o:p></span></p></div><div><p =
+class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>Damit wir =
+unkompliziert in Kontakt bleiben, erreichen Sie mich ab sofort =
+unter:<o:p></o:p></span></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Segoe UI =
+Symbol",sans-serif;color:black'>&#128222;</span><span =
+style=3D'font-family:"Arial",sans-serif;color:black'> <b>0676 / =
+5533024</b><o:p></o:p></span></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Segoe UI =
+Symbol",sans-serif;color:black'>&#128231;</span><span =
+style=3D'font-family:"Arial",sans-serif;color:black'> <b><a =
+href=3D"mailto:patrick@mehrfachagentur.eu">patrick@mehrfachagentur.eu</a>=
+</b><o:p></o:p></span></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>An dieser Stelle =
+m=C3=B6chte ich mich herzlich f=C3=BCr Ihr Vertrauen bedanken. Unsere =
+Zusammenarbeit bedeutet mir viel, und ich freue mich darauf, Sie auch =
+weiterhin mit vollem Einsatz und pers=C3=B6nlicher Betreuung =
+unterst=C3=BCtzen zu d=C3=BCrfen.<o:p></o:p></span></p></div><div><p =
+class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>Wenn Sie Fragen =
+haben oder etwas besprechen m=C3=B6chten, melden Sie sich jederzeit =
+gerne telefonisch oder per Nachricht.<o:p></o:p></span></p></div><div><p =
+class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>Herzliche =
+Gr=C3=BC=C3=9Fe<o:p></o:p></span></p></div><div><p =
+class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div><div><p class=3DMsoNormal><b><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>Patrick Bogaards, =
+MSc</span></b><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p></o:p></span></=
+p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>Versicherungsmehrfac=
+hagent<o:p></o:p></span></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'>staatlich =
+gepr=C3=BCfter Verm=C3=B6gensberater<o:p></o:p></span></p></div><div><p =
+class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Segoe UI =
+Symbol",sans-serif;color:black'>&#128222;</span><span =
+style=3D'font-family:"Arial",sans-serif;color:black'> 0676 / =
+5533024<o:p></o:p></span></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Segoe UI =
+Symbol",sans-serif;color:black'>&#128231;</span><span =
+style=3D'font-family:"Arial",sans-serif;color:black'> <a =
+href=3D"mailto:patrick@mehrfachagentur.eu">patrick@mehrfachagentur.eu</a>=
+<o:p></o:p></span></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Segoe UI =
+Symbol",sans-serif;color:black'>&#127760;</span><span =
+style=3D'font-family:"Arial",sans-serif;color:black'> <a =
+href=3D"http://www.mehrfachagentur.eu">www.mehrfachagentur.eu</a><o:p></o=
+:p></span></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Segoe UI =
+Symbol",sans-serif;color:black'>&#127760;</span><span =
+style=3D'font-family:"Arial",sans-serif;color:black'> <a =
+href=3D"http://www.bogaards.at">www.bogaards.at</a><o:p></o:p></span></p>=
+</div><div><p class=3DMsoNormal><span =
+style=3D'font-family:"Arial",sans-serif;color:black'><o:p>&nbsp;</o:p></s=
+pan></p></div></div></body></html>
+------=_NextPart_000_0061_01DD2EEC.BFF92A40--
+

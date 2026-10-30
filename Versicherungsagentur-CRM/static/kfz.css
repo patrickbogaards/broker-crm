@@ -1,0 +1,20 @@
+dialog.kfz-dialog{width:min(980px,calc(100% - 28px))}
+dialog.kfz-dialog .modal-body{max-height:calc(90vh - 155px);overflow-y:auto}
+.kfz-intro{padding:15px 18px;margin-bottom:20px;border:1px solid #d0e5ed;border-radius:8px;background:#e9f3f7;color:#31576f}
+.kfz-step{border:1px solid #dbe5ec;border-radius:10px;padding:18px 20px 7px;margin:0 0 20px;min-width:0}
+.kfz-step legend{padding:0 7px;font-weight:700;color:#143d57}
+.kfz-step .form-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.kfz-step .field[hidden]{display:none!important}
+.kfz-preview{padding:20px;margin:0 0 20px;border:1px solid #b6ddd4;border-radius:10px;background:#eef8f4;color:#215b4d}
+.kfz-preview-head{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}
+.kfz-preview-head span{color:#496b60;font-size:.875rem}
+.kfz-preview dl{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px 15px;margin:0}
+.kfz-preview dt,.kfz-preview dd{margin:0;font-size:.9375rem;overflow-wrap:anywhere}
+.kfz-preview dd{text-align:right;font-weight:650}
+.kfz-preview-annual{border-top:1px solid #b6ddd4;padding-top:12px;margin-top:13px;font-size:.875rem}
+.kfz-preview p{margin:14px 0 0;color:#31576f;font-size:.875rem}
+.tax-lines{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 8px;min-width:190px;font-size:.8125rem;line-height:1.35}
+.tax-lines span:nth-child(even){text-align:right;font-variant-numeric:tabular-nums}
+.tax-lines .tax-total{font-weight:700;color:#264f58}
+.tax-lines .tax-separate{grid-column:1/-1;color:#687b8e;margin-top:5px}
+@media(max-width:680px){.kfz-step .form-grid{grid-template-columns:1fr}.kfz-step{padding:15px 14px 4px}dialog.kfz-dialog .modal-body{padding:18px 14px}}
